@@ -5,7 +5,7 @@ Edit Panel
 {% endblock %}
 
 {% block body %}
-<div class="container w-25 my-3">
+<div class="container w-25 my-3" xmlns="http://www.w3.org/1999/html">
     <div class="mb-3">
         <h4>Edit</h4>
     </div>
@@ -27,14 +27,22 @@ Edit Panel
             <label for="sanskrit" class="form-label">Sanskrit</label>
             <input type="text" class="form-control" name="sanskrit" value='{{student.sanskrit}}'>
         </div>
+        <div class="mb-3">
+            <label for="english" class="form-label">English</label>
+            <input type="text" class="form-control" name="english" value="{{ student.english }}">
+        </div>
 
         <div class="mb-3">
             <label for="maths" class="form-label">Maths</label>
             <input type="text" class="form-control" name="maths" value='{{student.maths}}'>
         </div>
         <div class="mb-3">
-            <label for="science" class=" form-label">Science</label>
+            <label for="science" class="form-label">Science</label>
             <input type="text" class="form-control" name="science" value='{{student.science}}'>
+        </div>
+        <div class="mb-3">
+            <label for="social" class="form-label">Social</label>
+            <input type="text" class="form-control" name="social" value='{{ student.social }}'>
         </div>
 
         <input type="submit" class="form-control btn btn-success" value="Edit">
